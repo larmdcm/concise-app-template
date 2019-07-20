@@ -1,0 +1,24 @@
+{
+    "name": "cmdcm/concise",
+    "description": "the concise-framework project template",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "larmdcm",
+            "email": "mdcm98@163.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.0.12",
+        "cmdcm/concise-framework": "*"
+    },
+    "autoload":{
+        
+    },
+    "repositories": [
+        {"type": "composer", "url": "https://packagist.phpcomposer.com"},
+        {"packagist": false}
+    ]
+}
