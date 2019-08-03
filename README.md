@@ -1,1 +1,1 @@
-# concise 项目模板
+# concise-framework框架应用项目模板

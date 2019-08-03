@@ -1,0 +1,12 @@
+<?php
+// 引入app文件
+require __DIR__ . '/bootstrap/app.php';
+// 引入命名空间
+use Concise\Console;
+use Concise\Exception\ConsoleException;
+
+try {
+	Console::make($argv)->handle();
+} catch (ConsoleException $e) {
+	print($e->getCommand() . ':' . $e->getMessage());
+}

@@ -1,7 +1,6 @@
 /.idea
 /.vscode
 /vendor
-/concise
 /.git
 *.log
 .env/.idea
