@@ -21,5 +21,14 @@ return [
 		'message' => 'Whoops! There was an error.',
 		// 自定义错误处理
 		'custom_error_handle' => ''
+	],
+	// 服务提供者
+	'provider' => [
+		// 注册路由
+		'mapRoute' => [
+			'class'     => 'App\Provider\RouteServiceProvider',
+			'arguments' => [],
+			'singleton' => true
+		]
 	]
 ];

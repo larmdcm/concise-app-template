@@ -16,7 +16,7 @@ $container = Concise\Container::getInstance();
 $container->bind([
    'app'     => Concise\Foundation\App::class,
    'env'     => Concise\Env\Env::class,
-   'router'  => Concise\Routing\Router::class,
+   'router'  => Concise\Routing\Route::class,
    'request' => Concise\Http\Request::class,
    'config'  => Concise\Config\Config::class,
    'date'    => Concise\Date\Date::class,
