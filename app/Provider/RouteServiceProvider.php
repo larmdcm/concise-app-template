@@ -13,6 +13,14 @@ class RouteServiceProvider
 	protected $namespace = 'App\Controller';
 
 	/**
+	 * web中间件
+	 * @var array
+	 */
+	protected $webMiddleware = [
+		\Concise\Http\Middleware\VerifyCsrfToken::class
+	];
+
+	/**
 	 * 注册路由
 	 * @return void
 	 */
@@ -29,6 +37,7 @@ class RouteServiceProvider
 	public function mapWebRoute ()
 	{
 		Route::namespace($this->namespace)
+			  ->middleware($this->webMiddleware)
 			  ->group(base_url('route/web.php'));
 	}
 
