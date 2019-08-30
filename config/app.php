@@ -29,6 +29,12 @@ return [
 			'class'     => 'App\Provider\RouteServiceProvider',
 			'arguments' => [],
 			'singleton' => true
+		],
+		// 中间件服务
+		'middlewareService' => [
+			'class'     => 'App\Provider\MiddlewareServiceProvider',
+			'arguments' => [],
+			'singleton' => true
 		]
 	]
 ];
