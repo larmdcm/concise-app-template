@@ -1,6 +1,8 @@
 <?php
 
 return [
+	// 应用名称
+	'app_name'       => env("APP_NAME",'Concise'),
 	// 顶级命名空间
 	'app_namespace'  => env("APP_NAMESPACE",'App'),
 	// 是否调试模式
@@ -24,6 +26,12 @@ return [
 	],
 	// 服务提供者
 	'provider' => [
+		// 应用服务提供
+		'appService' => [
+			'class' 	=> 'App\Provider\AppServiceProvider',
+			'arguments' => [],
+			'singleton' => true
+		],
 		// 注册路由
 		'mapRoute' => [
 			'class'     => 'App\Provider\RouteServiceProvider',
